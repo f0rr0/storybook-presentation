@@ -59,9 +59,8 @@ export default class Presentation extends React.Component {
           <Heading size={4} textColor="secondary" textFont="secondary">Status Quo 😅</Heading>
           <List margin="120px auto">
             {[
-              "Complex bootstrapping processes",
+              "Complex bootstrapping process",
               "Deeply nested scenes",
-              "Hot reloading may not work",
               "Reloads are expensive",
               "Implicit dependency on the codebase",
               "Non development builds are expensive",
@@ -98,15 +97,11 @@ export default class Presentation extends React.Component {
           <Heading size={4} textColor="secondary" textFont="secondary">Demo ✨</Heading>
         </Slide>
         <Slide align="center flex-start">
-          <Heading size={4} textColor="secondary" textFont="secondary">Community 👥</Heading>
-        </Slide>
-        <Slide align="center flex-start">
           <Heading size={4} textColor="secondary" textFont="secondary">Winnings 🍻</Heading>
           <List margin="120px auto">
             {[
-              "Complex bootstrapping processes",
+              "Complex bootstrapping process",
               "Deeply nested scenes",
-              "Hot reloading may not work",
               "Reloads are expensive",
               "Implicit dependency on the codebase",
               "Non development builds are expensive",
