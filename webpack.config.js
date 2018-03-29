@@ -46,6 +46,10 @@ module.exports = {
       loader: "url-loader?mimetype=image/gif",
       include: path.join(__dirname, "assets")
     }, {
+      test: /\.webp$/,
+      loader: "url-loader?mimetype=image/webp",
+      include: path.join(__dirname, "assets")
+    }, {
       test: /\.jpg$/,
       loader: "url-loader?mimetype=image/jpg",
       include: path.join(__dirname, "assets")
