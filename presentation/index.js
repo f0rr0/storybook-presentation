@@ -12,7 +12,8 @@ import {
   Image,
   Layout,
   Fill,
-  Appear
+  Appear,
+  S
 } from "spectacle";
 
 // Import theme
@@ -30,7 +31,7 @@ require("normalize.css");
 const theme = createTheme({
   primary: "#21232d",
   secondary: "#d8d8d6",
-  tertiary: "#57c7ff",
+  tertiary: "#f3f99d",
   quarternary: "#f92672"
 }, {
   primary: { name: "Inconsolata", googleFont: true, styles: [ "400", "700" ] },
@@ -63,7 +64,7 @@ export default class Presentation extends React.Component {
               "Hot reloading may not work",
               "Reloads are expensive",
               "Implicit dependency on the codebase",
-              "Production builds are expensive",
+              "Non development builds are expensive",
               "Visibility varies inversely with LOC"
             ].map((item) => (
               <Appear key={item}>
@@ -76,13 +77,52 @@ export default class Presentation extends React.Component {
           <Image width="800" src={sadDeveloper} />
         </Slide>
         <Slide align="center center">
-          <Text textColor="#f3f99d" textFont="primary" size={4} italic>
+          <Image width="400" src={storybookLogo} />
+        </Slide>
+        <Slide align="center center">
+          <Text textColor="tertiary" textFont="primary" size={4} italic>
             Isolated UI development environment for components
           </Text>
         </Slide>
         <Slide align="center center">
-          <Text textColor="#f3f99d" textFont="primary" size={4} italic>
+          <Text textColor="tertiary" textFont="primary" size={4} italic>
             Visualise different states of your components and build them interactively
+          </Text>
+        </Slide>
+        <Slide align="center center">
+          <Text textColor="tertiary" textFont="primary" size={4} italic>
+            Stories are to UI components what unit tests are to business logic.
+          </Text>
+        </Slide>
+        <Slide align="center center">
+          <Heading size={4} textColor="secondary" textFont="secondary">Demo ✨</Heading>
+        </Slide>
+        <Slide align="center flex-start">
+          <Heading size={4} textColor="secondary" textFont="secondary">Community 👥</Heading>
+        </Slide>
+        <Slide align="center flex-start">
+          <Heading size={4} textColor="secondary" textFont="secondary">Winnings 🍻</Heading>
+          <List margin="120px auto">
+            {[
+              "Complex bootstrapping processes",
+              "Deeply nested scenes",
+              "Hot reloading may not work",
+              "Reloads are expensive",
+              "Implicit dependency on the codebase",
+              "Non development builds are expensive",
+              "Visibility varies inversely with LOC"
+            ].map((item) => (
+              <Appear key={item}>
+                <ListItem textColor="secondary" textFont="primary" italic>
+                  <S type="strikethrough">{item}</S>
+                </ListItem>
+              </Appear>
+            ))}
+          </List>
+        </Slide>
+        <Slide align="center center">
+          <Text textColor="tertiary" textFont="primary" size={4} italic>
+            Surfaces questions around the component's API and ownership of data/props. The contract between components is well established.
           </Text>
         </Slide>
       </Deck>
