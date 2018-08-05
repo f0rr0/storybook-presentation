@@ -1,5 +1,7 @@
 # Spectacle Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/f0rr0/storybook-presentation.svg)](https://greenkeeper.io/)
+
 ## Contents
 
 - [Reference](#reference)
